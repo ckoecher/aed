@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ereigniskette</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hauptmenu">Hauptmenü</string>
+    <string name="ereignis_anzeigen">Ereignis anzeigen</string>
+    <string name="ereignis_hinzufugen">Neues Ereignis hinzufügen</string>
+    <string name="title_activity_choose_event">ChooseEvent</string>
+
+</resources>
