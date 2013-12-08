@@ -1,4 +1,6 @@
-package com.example.ereigniskette;
+package vco.aed.ereigniskette;
+
+import com.example.ereigniskette.R;
 
 import android.os.Bundle;
 import android.app.Activity;
