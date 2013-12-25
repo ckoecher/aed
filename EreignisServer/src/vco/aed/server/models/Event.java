@@ -20,7 +20,7 @@ public class Event {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private final Long id;
-	
+
 	@Column(nullable=false)
 	private String name;
 	
@@ -53,6 +53,10 @@ public class Event {
 		this.members = members;
 		this.locations = locations;
 		this.prevEvents = prevEvents;
+	}
+	
+	public Long getId() {
+		return id;
 	}
 
 	public Set<Event> getPrevEvents() {
