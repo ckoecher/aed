@@ -15,7 +15,7 @@
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="72dp"
-        android:text="@string/ereignis_hinzufugen" />
+        android:text="@string/addEvent" />
 
     <TextView
         android:id="@+id/textView1"
@@ -24,7 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
-        android:text="@string/hauptmenu"
+        android:text="@string/main_menu"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#00B2EE" />
 
@@ -35,6 +35,6 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="93dp"
-        android:text="@string/ereignis_anzeigen" />
+        android:text="@string/showEvent" />
 
 </RelativeLayout>

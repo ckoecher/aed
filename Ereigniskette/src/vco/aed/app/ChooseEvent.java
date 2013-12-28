@@ -1,9 +1,8 @@
 package vco.aed.app;
 
-import com.example.ereigniskette.R;
-
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 
 public class ChooseEvent extends Activity {
@@ -12,6 +11,15 @@ public class ChooseEvent extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_choose_event);
+		
+		try {
+			Thread.sleep(5000);
+			startActivity(new Intent(this, vco.aed.app.EventDetails.class));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ereigniskette"
+    package="vco.aed.app"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -25,6 +25,38 @@
         <activity
             android:name="vco.aed.app.ChooseEvent"
             android:label="@string/title_activity_choose_event" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.AddLocations"
+            android:label="@string/title_activity_add_location" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.AddNext"
+            android:label="@string/title_activity_add_next" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.AddPersons"
+            android:label="@string/title_activity_add_persons" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.AddPrevious"
+            android:label="@string/title_activity_add_previous" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.EventDetails"
+            android:label="@string/title_activity_event_details" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.NewEvent"
+            android:label="@string/title_activity_new_event" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.NewLocation"
+            android:label="@string/title_activity_new_location" >
+        </activity>
+        <activity
+            android:name="vco.aed.app.NewPerson"
+            android:label="@string/title_activity_new_person" >
         </activity>
     </application>
 
