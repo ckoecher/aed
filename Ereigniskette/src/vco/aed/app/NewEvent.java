@@ -1,19 +1,19 @@
 package vco.aed.app;
 
+import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class ChooseEvent extends Activity {
+public class NewEvent extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_choose_event);
+		setContentView(R.layout.activity_new_event);
 		
 		setClickHandlers();
 	}
@@ -21,18 +21,22 @@ public class ChooseEvent extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.choose_event, menu);
+		getMenuInflater().inflate(R.menu.new_event, menu);
 		return true;
 	}
 	
 	private void setClickHandlers() {
-		TextView t = (TextView) findViewById(R.id.textView1);
-		t.setOnClickListener(new OnClickListener() {
+		Button btn = (Button) findViewById(R.id.button1);
+		assert (btn != null);
+		btn.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(getApplicationContext(), vco.aed.app.EventDetails.class));
+				startActivity(new Intent(getApplicationContext() ,vco.aed.app.AddPrevious.class));
 			}
 		});
+		
+		
+		
 	}
 
 }

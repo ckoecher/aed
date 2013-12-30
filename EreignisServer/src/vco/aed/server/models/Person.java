@@ -1,5 +1,6 @@
 package vco.aed.server.models;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -23,6 +24,17 @@ public class Person {
 	@ManyToMany(mappedBy="members")
 	private final Set<Event> events;
 	
+	public Person() {
+		this.id = null;
+		this.events = new HashSet<Event>();
+	}
+	
+	public Person(String name) {
+		this.id = null;
+		this.events = new HashSet<Event>();
+		this.name = name;
+	}
+	
 	public Person(Long id, Set<Event> events) {
 		this.id = id;
 		this.events = events;
@@ -42,5 +54,10 @@ public class Person {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return this.name;
 	}
 }

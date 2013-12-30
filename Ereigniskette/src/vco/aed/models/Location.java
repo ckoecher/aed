@@ -1,5 +1,6 @@
 package vco.aed.models;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Location {
@@ -8,6 +9,17 @@ public class Location {
 	private String name;
 
 	private final Set<Event> events;
+	
+	public Location() {
+		this.id = null;
+		this.events = new HashSet<Event>();
+	}
+	
+	public Location(String name) {
+		this.id = null;
+		this.events = new HashSet<Event>();
+		this.name = name;
+	}
 	
 	public Location(Long id,Set<Event> events) {
 		this.id = id;
@@ -30,5 +42,9 @@ public class Location {
 		this.name = name;
 	}
 	
+	@Override
+	public String toString() {
+		return this.name;
+	}
 	
 }

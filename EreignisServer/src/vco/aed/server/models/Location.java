@@ -1,5 +1,6 @@
 package vco.aed.server.models;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -20,6 +21,17 @@ public class Location {
 
 	@ManyToMany(mappedBy="locations")
 	private final Set<Event> events;
+	
+	public Location() {
+		this.id = null;
+		this.events = new HashSet<Event>();
+	}
+	
+	public Location(String name) {
+		this.id = null;
+		this.events = new HashSet<Event>();
+		this.name = name;
+	}
 	
 	public Location(Long id,Set<Event> events) {
 		this.id = id;
@@ -42,5 +54,9 @@ public class Location {
 		this.name = name;
 	}
 	
+	@Override
+	public String toString() {
+		return this.name;
+	}
 	
 }
