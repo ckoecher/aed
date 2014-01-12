@@ -9,7 +9,7 @@
     <string name="title_activity_choose_event">ChooseEvent</string>
     <string name="chooseEvent">Wähle gewünschtes Ereignis aus der folgenden Liste:</string>
     <string name="title_activity_new_event">NewEvent</string>
-    <string name="name">Name</string>
+    <string name="name">Hallo</string>
     <string name="date">Datum</string>
     <string name="saveNext">Speichern und weiter</string>
     <string name="people">Personen</string>
